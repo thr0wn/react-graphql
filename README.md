@@ -1,8 +1,8 @@
-[![](https://img.shields.io/badge/react.js-black?logo=react)](https://react.dev/)
-[![](https://img.shields.io/badge/babel-black?logo=babel)](https://babeljs.io/)
-[![](https://img.shields.io/badge/webpack-black?logo=webpack)](https://webpack.js.org/)
-[![](https://img.shields.io/badge/node.js-black?logo=node.js)](https://webpack.js.org/)
-[![](https://img.shields.io/badge/graphql-black?logo=graphql)](https://webpack.js.org/)
+[![](https://img.shields.io/badge/react.js-black?logo=reactstyle=for-the-badge&style=for-the-badge)](https://react.dev/)
+[![](https://img.shields.io/badge/babel-black?logo=babel&style=for-the-badge)](https://babeljs.io/)
+[![](https://img.shields.io/badge/webpack-black?logo=webpack&style=for-the-badge)](https://webpack.js.org/)
+[![](https://img.shields.io/badge/node.js-black?logo=node.js&style=for-the-badge)](https://webpack.js.org/)
+[![](https://img.shields.io/badge/graphql-black?logo=graphql&style=for-the-badge)](https://webpack.js.org/)
 
 
 # React + graphQL + babel + webpack and node.js
