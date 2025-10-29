@@ -7,7 +7,8 @@
 
 # React + graphQL + babel + webpack + node.js
 > Udemy: https://www.udemy.com/course/graphql-with-react-course
-Project using react, graphql, babel, webpack and node.js.
+
+This Project uses the stack react, graphql, babel, webpack and node.js.
 
 ## Node.js commands
 	> Requires node.js v20
