@@ -127,3 +127,25 @@ mutation {
   }
 }
 ```
+
+Mutation: deleteUser
+```graphql
+mutation {
+  deleteUser(id: "23") {
+    id,
+    firstName
+    age
+  }
+}
+```
+
+Mutation: editUser
+```graphql
+mutation {
+  editUser(id: "40", firstName: "Bob") {
+    id,
+    firstName
+    age
+  }
+}
+```
