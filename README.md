@@ -46,8 +46,7 @@ Query example:
 
 ## Queries
 
-### User
-User
+User by id
 ```graphql
 {
   user(id: "40") {
@@ -74,8 +73,7 @@ User and company
 }
 ```
 
-### Company
-Company
+Company by id
 ```graphql
 {
   company(id: "1") {
@@ -97,6 +95,35 @@ Company and users
       id,
       firstName
     }
+  }
+}
+```
+
+Named companies and query fragments
+```graphql
+{
+  apple: company(id: "1") {
+    ...companyDetails
+  }
+  google: company(id: "2") {
+    ...companyDetails
+  }
+}
+
+fragment companyDetails on Company {
+  id
+  name
+  description
+}
+```
+
+Mutation: addUser
+```graphql
+mutation {
+  addUser(firstName: "Stephen" age: 26) {
+    id,
+    firstName
+    age
   }
 }
 ```
