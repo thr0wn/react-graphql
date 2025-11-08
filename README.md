@@ -43,3 +43,60 @@ Query example:
   }
 }
 ```
+
+## Queries
+
+### User
+User
+```graphql
+{
+  user(id: "40") {
+    id,
+    firstName,
+    age,
+    companyId
+  }
+}
+```
+
+User and company
+```graphql
+{
+  user(id: "40") {
+    id,
+    firstName,
+    age,
+    company {
+      id,
+      name
+    }
+  }
+}
+```
+
+### Company
+Company
+```graphql
+{
+  company(id: "1") {
+    id,
+    name,
+    description
+  }
+}
+```
+
+Company and users
+```graphql
+{
+  company(id: "1") {
+    id,
+    name,
+    description,
+    users {
+      id,
+      firstName
+    }
+  }
+}
+```
