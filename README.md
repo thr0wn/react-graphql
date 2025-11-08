@@ -5,11 +5,13 @@
 [![](https://img.shields.io/badge/graphql-black?logo=graphql&style=for-the-badge)](https://webpack.js.org/)
 
 
-# React + graphQL + babel + webpack and node.js
-Project using react, graphql, babel, webpack and node.js.
+# React + graphQL + babel + webpack + node.js
+> Udemy: https://www.udemy.com/course/graphql-with-react-course
+
+This Project uses react, graphql, babel, webpack and node.js.
 
 ## Node.js commands
-	> Requires node.js v18
+	> Requires node.js v20
 
 Install dependencies
 
