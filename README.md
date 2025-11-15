@@ -7,7 +7,7 @@
 
 # React + graphQL + express + babel + webpack
 
-This Project uses react, express, graphql, babel and webpack. It was built following the udemy course: https://www.udemy.com/course/graphql-with-react-course. It is divided in sections, so follow search section setup do some study.
+This Project uses react, graphql, express, babel and webpack. It was built following the udemy course: https://www.udemy.com/course/graphql-with-react-course. It is divided in sections, so follow search section setup do some study.
 
 ## Section 1
 Node.js (express) server with graphql configured. Test running some graphql queries at `/graphql`. QUeries are listed after the setup.
