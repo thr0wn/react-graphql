@@ -151,20 +151,18 @@ mutation {
 }
 ```
 
-
 ## Section 2
 Client, server and a mongo database.
 
 ### Setup
-#### Fast setup mongodb
-Run a container:
+#### Setup mongodb with docker
+Run a docker container:
 ```bash
 docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=nraboy -e MONGO_INITDB_ROOT_PASSWORD=password1234 --name mongodb mongodb/mongodb-community-server:latest
 ```
+Install Mongodb compass and set the connection using the credentials.
 user: nrabooy
 password: password1234
-
-Install Mongodb compass and set a database called lyrical.
 
 #### Create a song and a lyric
 Populate the database with a song and a lyric:
