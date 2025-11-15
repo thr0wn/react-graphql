@@ -5,14 +5,15 @@
 [![](https://img.shields.io/badge/graphql-black?logo=graphql&style=for-the-badge)](https://webpack.js.org/)
 
 
-# React + graphQL + babel + webpack + node.js
-> Udemy: https://www.udemy.com/course/graphql-with-react-course
+# React + graphQL + express + babel + webpack
 
-This Project uses react, graphql, babel, webpack and node.js.
+This Project uses react, express, graphql, babel and webpack. It was built following the udemy course: https://www.udemy.com/course/graphql-with-react-course. It is divided in sections, so follow search section setup do some study.
 
-## Node.js commands
-	> Requires node.js v20
+## Section 1
+Node.js (express) server with graphql configured. Test running some graphql queries at `/graphql`. QUeries are listed after the setup.
 
+### Setup
+    
 Install dependencies
 
 ```bash
@@ -44,7 +45,7 @@ Query example:
 }
 ```
 
-## Queries
+### Queries
 
 User by id
 ```graphql
@@ -146,6 +147,49 @@ mutation {
     id,
     firstName
     age
+  }
+}
+```
+
+
+## Section 2
+Client, server and a mongo database.
+
+### Setup
+#### Fast setup mongodb
+Run a container:
+```bash
+docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=nraboy -e MONGO_INITDB_ROOT_PASSWORD=password1234 --name mongodb mongodb/mongodb-community-server:latest
+```
+user: nrabooy
+password: password1234
+
+Install Mongodb compass and set a database called lyrical.
+
+#### Create a song and a lyric
+Populate the database with a song and a lyric:
+```graphql
+mutation {
+  addSong(title: "Cold night") {
+    id
+  } 
+}
+
+mutation {
+  addLyricToSong(songId: "id_from_previous_mutation", content: "Oh my oh my its a cold night") {
+    id
+  } 
+}
+```
+Check the result:
+```graphql
+{
+  songs {
+    id
+    title
+    lyrics {
+      content
+    }
   }
 }
 ```
