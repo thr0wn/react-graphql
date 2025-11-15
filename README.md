@@ -160,7 +160,8 @@ Run a docker container:
 ```bash
 docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=nraboy -e MONGO_INITDB_ROOT_PASSWORD=password1234 --name mongodb mongodb/mongodb-community-server:latest
 ```
-Install Mongodb compass and set the connection using the credentials.
+Install Mongodb compass and set the connection using the credentials below:
+
 user: nrabooy
 password: password1234
 
